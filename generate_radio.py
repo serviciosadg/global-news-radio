@@ -16,16 +16,31 @@ def main():
     except FileNotFoundError:
         articles = []
 
-    # Unbiased news script intro with a sponsorship opportunity mention
     script = (
-        "Welcome to your global hourly news update, brought to you by our proud sponsor. "
-        "Here are the top unbiased headlines from around the world. "
+        "Welcome to AlexDiaz Global Radio. Your live multipolar news briefing, "
+        "pulling unfiltered perspectives from East, West, and the Global South. "
+        "Want your brand or business featured on this broadcast and pinned to our live feed? "
+        "Click the Advertise button at the top of our page to sponsor AlexDiaz Global Radio. "
     )
-    
-    for article in articles[:5]:
-        script += f"From {article['source']}: {article['title']}. "
 
-    script += "This concludes our current update. Stay tuned for more."
+    history_items = [a for a in articles if a.get('category') in ('History', 'ArchiveVault')]
+    news_items = [a for a in articles if a.get('category') not in ('History', 'ArchiveVault')]
+
+    if history_items:
+        script += "First, from our hourly Archive Vault and On This Day feature: "
+        for item in history_items:
+            script += f"From {item['source']}: {item['title']}. "
+
+    script += "Now, here is the latest update across global headlines: "
+
+    for article in news_items[:8]:
+        script += f"Reporting from {article['source']}: {article['title']}. "
+
+    script += (
+        "That concludes this latest update on AlexDiaz Global Radio. "
+        "Remember, sponsorship slots are open now. Click Advertise on our page to partner with us. "
+        "Stay tuned for the next automated transmission."
+    )
 
     print("Generating AI voice broadcast...")
     asyncio.run(text_to_speech(script))
