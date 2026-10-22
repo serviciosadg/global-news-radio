@@ -67,7 +67,6 @@
 
           <div>
             <div class="flex items-center gap-2">
-              <!-- Removed font-extrabold and tracking-wider, keeping it normal weight and white -->
               <h1 class="text-base text-white font-mono-tech">AlexDiaz Global Radio</h1>
               <span class="bg-cyan-500/20 text-cyan-300 text-[10px] font-mono-tech font-bold px-2 py-0.5 rounded border border-cyan-500/40 animate-pulse">LIVE ON AIR</span>
             </div>
@@ -114,18 +113,23 @@
         </audio>
       </div>
 
-      <!-- Sponsorship Banner -->
-      <div class="bg-gradient-to-r from-cyan-950/70 via-teal-950/50 to-emerald-950/70 border border-cyan-500/40 rounded-lg p-3 flex items-center justify-between gap-3 shadow-[0_0_15px_rgba(6,182,212,0.12)]">
-        <div class="space-y-0.5">
-          <div class="flex items-center gap-2">
-            <span class="text-[10px] font-mono-tech font-bold uppercase bg-gradient-to-r from-cyan-400 to-emerald-400 text-black px-1.5 py-0.5 rounded">PRIORITY UPLINK</span>
-            <span class="text-xs font-bold text-white font-mono-tech uppercase">Sponsor AlexDiaz Global Radio & AI Broadcast</span>
-          </div>
-          <p class="text-xs text-cyan-100/80">Deploy your brand across our live AI voice readout and terminal banner.</p>
+      <!-- Clean Support & Sponsor Banner with 3 Buttons -->
+      <div class="bg-gradient-to-r from-cyan-950/70 via-teal-950/50 to-emerald-950/70 border border-cyan-500/40 rounded-lg p-3 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-[0_0_15px_rgba(6,182,212,0.12)]">
+        <div class="space-y-0.5 text-center sm:text-left">
+          <span class="text-[10px] font-mono-tech font-bold uppercase text-cyan-400 tracking-wider">SUPPORT ALEXDIAZ GLOBAL RADIO</span>
+          <p class="text-xs text-cyan-100/80">Help keep independent AI news and community telemetry online.</p>
         </div>
-        <a href="mailto:sponsors@example.com?subject=AlexDiaz%20Global%20Radio%20Sponsorship" class="shrink-0 bg-gradient-to-r from-cyan-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 text-black font-mono-tech font-bold text-xs px-3.5 py-2 rounded transition shadow-[0_0_12px_rgba(16,185,129,0.35)]">
-          ADVERTISE ↗
-        </a>
+        <div class="flex items-center gap-2 shrink-0">
+          <a href="mailto:support@example.com?subject=Radio%20Donation" class="bg-cyan-950 hover:bg-cyan-900 text-cyan-300 border border-cyan-500/40 font-mono-tech font-bold text-xs px-3 py-1.5 rounded transition">
+            Donate
+          </a>
+          <a href="mailto:sponsors@example.com?subject=Radio%20Sponsorship" class="bg-teal-950 hover:bg-teal-900 text-teal-300 border border-teal-500/40 font-mono-tech font-bold text-xs px-3 py-1.5 rounded transition">
+            Sponsor
+          </a>
+          <a href="mailto:proposals@example.com?subject=Business%20Proposal" class="bg-gradient-to-r from-cyan-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 text-black font-mono-tech font-bold text-xs px-3 py-1.5 rounded transition shadow-[0_0_10px_rgba(16,185,129,0.3)]">
+            Business Proposals ↗
+          </a>
+        </div>
       </div>
 
     </header>
