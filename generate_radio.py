@@ -17,8 +17,8 @@ def main():
         articles = []
 
     script = (
-        "Welcome to AlexDiaz Global Radio. Your live multipolar news briefing, "
-        "pulling unfiltered perspectives from East, West, and the Global South. "
+        "Welcome to AlexDiaz Global Radio. Here is the latest update, "
+        "bringing you unfiltered perspectives from East, West, and the Global South. "
         "Want your brand or business featured on this broadcast and pinned to our live feed? "
         "Click the Advertise button at the top of our page to sponsor AlexDiaz Global Radio. "
     )
@@ -31,7 +31,7 @@ def main():
         for item in history_items:
             script += f"From {item['source']}: {item['title']}. "
 
-    script += "Now, here is the latest update across global headlines: "
+    script += "Now, here are the latest headlines across global news: "
 
     for article in news_items[:8]:
         script += f"Reporting from {article['source']}: {article['title']}. "
@@ -39,7 +39,7 @@ def main():
     script += (
         "That concludes this latest update on AlexDiaz Global Radio. "
         "Remember, sponsorship slots are open now. Click Advertise on our page to partner with us. "
-        "Stay tuned for the next automated transmission."
+        "Sign up to receive updates in your email inbox."
     )
 
     print("Generating AI voice broadcast...")
