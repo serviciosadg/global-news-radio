@@ -3,64 +3,117 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Global News Radio | Live Feed</title>
+  <title>GLOBAL OSINT TERMINAL // LIVE SIGINT RADIO</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    body { background-color: #000000; color: #e7e9ea; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-    .x-border { border-color: #2f3336; }
-    #feed-viewport::-webkit-scrollbar { width: 6px; }
-    #feed-viewport::-webkit-scrollbar-thumb { background: #2f3336; border-radius: 3px; }
+    body {
+      background-color: #03070b;
+      color: #d1fae5;
+      font-family: 'Inter', sans-serif;
+      background-image: 
+        radial-gradient(rgba(16, 185, 129, 0.07) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(6, 182, 212, 0.03) 1px, transparent 1px);
+      background-size: 24px 24px, 100% 4px;
+    }
+    .font-mono-tech { font-family: 'JetBrains Mono', monospace; }
+    .osint-border { border-color: rgba(16, 185, 129, 0.25); }
+    .osint-panel {
+      background: rgba(6, 15, 25, 0.88);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.8), inset 0 0 12px rgba(16, 185, 129, 0.05);
+    }
+    /* Animated Radar Sweep */
+    .radar-sweep {
+      background: conic-gradient(from 0deg, transparent 70%, rgba(16, 185, 129, 0.75) 100%);
+      animation: radar-spin 2.8s linear infinite;
+    }
+    @keyframes radar-spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    #feed-viewport::-webkit-scrollbar { width: 5px; }
+    #feed-viewport::-webkit-scrollbar-track { background: #03070b; }
+    #feed-viewport::-webkit-scrollbar-thumb { background: #059669; border-radius: 2px; }
   </style>
 </head>
-<body class="min-h-screen flex justify-center bg-black">
+<body class="min-h-screen flex justify-center selection:bg-emerald-500 selection:text-black">
 
-  <!-- Main X/Twitter Timeline Column -->
-  <div class="w-full max-w-xl border-x x-border min-h-screen flex flex-col">
+  <!-- Main OSINT X-Style Stream Container -->
+  <div class="w-full max-w-2xl border-x osint-border min-h-screen flex flex-col bg-[#04090e]/90 shadow-2xl">
 
-    <!-- Sticky Top Bar: Title + AI Radio Player -->
-    <header class="sticky top-0 z-20 bg-black/85 backdrop-blur-md border-b x-border p-4 space-y-3">
-      <div class="flex items-center justify-between">
-        <div class="flex items-center gap-2">
-          <span class="w-3 h-3 bg-red-500 rounded-full animate-ping"></span>
-          <h1 class="text-xl font-bold tracking-tight text-white">Global News Radio</h1>
-          <span class="bg-sky-500/20 text-sky-400 text-xs font-bold px-2 py-0.5 rounded-full border border-sky-500/30">LIVE AI</span>
+    <!-- Top Tactical Telemetry Bar -->
+    <div class="bg-emerald-950/40 border-b osint-border px-4 py-1.5 flex items-center justify-between text-[11px] font-mono-tech text-emerald-400">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+        <span>SYS: ONLINE // MULTIPOLAR FEED</span>
+      </div>
+      <div id="utc-clock" class="tracking-widest text-cyan-400">UTC 00:00:00Z</div>
+    </div>
+
+    <!-- Sticky Command Header -->
+    <header class="sticky top-0 z-20 osint-panel border-x-0 border-t-0 p-4 space-y-3">
+      
+      <!-- Station Title + Animated Radar Icon -->
+      <div class="flex items-center justify-between gap-3">
+        <div class="flex items-center gap-3">
+          <!-- Animated Radar Icon -->
+          <div class="relative w-11 h-11 rounded-full border border-emerald-500/60 bg-emerald-950/50 flex items-center justify-center overflow-hidden shrink-0 shadow-[0_0_12px_rgba(16,185,129,0.3)]">
+            <div class="absolute inset-1 rounded-full border border-emerald-500/30"></div>
+            <div class="absolute inset-3 rounded-full border border-emerald-500/20"></div>
+            <div class="absolute w-full h-[1px] bg-emerald-500/30"></div>
+            <div class="absolute h-full w-[1px] bg-emerald-500/30"></div>
+            <div class="radar-sweep absolute inset-0 rounded-full"></div>
+            <span class="relative w-1.5 h-1.5 bg-emerald-300 rounded-full shadow-[0_0_6px_#6ee7b7]"></span>
+            <span class="absolute top-2.5 right-3 w-1 h-1 bg-amber-400 rounded-full animate-ping"></span>
+          </div>
+
+          <div>
+            <div class="flex items-center gap-2">
+              <h1 class="text-lg font-extrabold tracking-wider text-white font-mono-tech uppercase">OSINT // GLOBAL RADIO</h1>
+              <span class="bg-red-500/20 text-red-400 text-[10px] font-mono-tech font-bold px-2 py-0.5 rounded border border-red-500/40 animate-pulse">LIVE SIGINT</span>
+            </div>
+            <p class="text-[11px] font-mono-tech text-emerald-400/80">WEST · RUSSIA · MENA · ASIA · LATAM · ARCHIVE.ORG</p>
+          </div>
         </div>
-        <button id="scroll-toggle" class="text-xs bg-zinc-900 hover:bg-zinc-800 text-zinc-300 border x-border px-3 py-1 rounded-full transition">
-          ⏸ Pause Autoscroll
+
+        <button id="scroll-toggle" class="text-[11px] font-mono-tech bg-emerald-950/60 hover:bg-emerald-900/60 text-emerald-300 border osint-border px-3 py-1.5 rounded transition shrink-0">
+          [⏸ PAUSE STREAM]
         </button>
       </div>
 
-      <!-- Audio Player Box -->
-      <div class="bg-zinc-900/90 border x-border rounded-2xl p-3 flex flex-col gap-2">
-        <div class="flex items-center justify-between text-xs text-zinc-400">
-          <span>🎙️ <strong class="text-white">On Air:</strong> Hourly Unbiased World News Briefing</span>
-          <span class="text-amber-400 font-medium">Sponsorships Open</span>
+      <!-- SIGINT Audio Broadcast Module -->
+      <div class="bg-[#020508] border osint-border rounded-lg p-3 space-y-2">
+        <div class="flex items-center justify-between text-[11px] font-mono-tech">
+          <span class="text-cyan-400">🎙️ <strong class="text-white">VOICE INTERCEPT:</strong> 10-MIN AI BRIEFING + ARCHIVE VAULT</span>
+          <span class="text-emerald-400">FREQ: AUTO-SYNC</span>
         </div>
-        <audio id="radio-player" controls class="w-full h-9">
+        <audio id="radio-player" controls class="w-full h-8 opacity-90">
           <source id="audio-source" src="news_broadcast.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
         </audio>
       </div>
 
-      <!-- Pinned Sponsorship / Advertise Invite Banner -->
-      <div class="bg-gradient-to-r from-sky-950/50 via-zinc-900 to-amber-950/40 border border-amber-500/40 rounded-2xl p-3.5 flex items-center justify-between gap-3">
+      <!-- Tactical Sponsorship / Advertise Banner -->
+      <div class="bg-gradient-to-r from-amber-950/40 via-[#06101a] to-emerald-950/40 border border-amber-500/50 rounded-lg p-3 flex items-center justify-between gap-3">
         <div class="space-y-0.5">
-          <div class="flex items-center gap-1.5">
-            <span class="text-[11px] font-bold uppercase tracking-wider bg-amber-500 text-black px-1.5 py-0.5 rounded">Promoted</span>
-            <span class="text-sm font-bold text-white">Advertise on Global News Radio</span>
+          <div class="flex items-center gap-2">
+            <span class="text-[10px] font-mono-tech font-bold uppercase bg-amber-500 text-black px-1.5 py-0.5 rounded">PRIORITY UPLINK</span>
+            <span class="text-xs font-bold text-white font-mono-tech uppercase">Sponsor This OSINT Station & AI Broadcast</span>
           </div>
-          <p class="text-xs text-zinc-300">Get your brand read live by our AI radio host & featured on this banner.</p>
+          <p class="text-xs text-slate-300">Deploy your brand across our live AI voice readout and terminal banner.</p>
         </div>
-        <a href="mailto:sponsors@example.com?subject=Radio%20Sponsorship%20Inquiry" class="shrink-0 bg-white hover:bg-zinc-200 text-black font-bold text-xs px-4 py-2 rounded-full transition">
-          Sponsor Us
+        <a href="mailto:sponsors@example.com?subject=OSINT%20Radio%20Sponsorship" class="shrink-0 bg-amber-500 hover:bg-amber-400 text-black font-mono-tech font-bold text-xs px-3.5 py-2 rounded transition shadow-[0_0_10px_rgba(245,158,11,0.4)]">
+          ADVERTISE ↗
         </a>
       </div>
+
     </header>
 
-    <!-- Autoscrolling Twitter-Style Feed -->
-    <div id="feed-viewport" class="flex-1 overflow-y-auto max-h-[calc(100vh-230px)] divide-y x-border">
-      <div id="feed-list" class="divide-y x-border">
-        <p class="p-6 text-zinc-500 text-sm text-center">Loading live global feed...</p>
+    <!-- Autoscrolling Intelligence Intercept Feed -->
+    <div id="feed-viewport" class="flex-1 overflow-y-auto max-h-[calc(100vh-270px)] divide-y osint-border">
+      <div id="feed-list" class="divide-y osint-border">
+        <p class="p-8 text-emerald-500/60 font-mono-tech text-xs text-center animate-pulse">INITIALIZING GLOBAL RSS & ARCHIVE.ORG TELEMETRY...</p>
       </div>
     </div>
 
@@ -72,8 +125,14 @@
     const scrollToggle = document.getElementById('scroll-toggle');
     const audioSource = document.getElementById('audio-source');
     const radioPlayer = document.getElementById('radio-player');
+    const utcClock = document.getElementById('utc-clock');
 
-    // Cache-bust audio so listeners always get the newest broadcast
+    // Live UTC OSINT Clock
+    setInterval(() => {
+      utcClock.textContent = new Date().toISOString().replace('T', ' ').slice(0, 19) + ' UTC';
+    }, 1000);
+
+    // Cache-bust audio every load
     audioSource.src = `news_broadcast.mp3?t=${Date.now()}`;
     radioPlayer.load();
 
@@ -82,7 +141,7 @@
 
     scrollToggle.addEventListener('click', () => {
       isScrolling = !isScrolling;
-      scrollToggle.textContent = isScrolling ? '⏸ Pause Autoscroll' : '▶️ Resume Autoscroll';
+      scrollToggle.textContent = isScrolling ? '[⏸ PAUSE STREAM]' : '[▶️ RESUME STREAM]';
     });
 
     feedViewport.addEventListener('mouseenter', () => isHovered = true);
@@ -92,7 +151,7 @@
 
     function autoScrollStep() {
       if (isScrolling && !isHovered) {
-        feedViewport.scrollTop += 0.6;
+        feedViewport.scrollTop += 0.55;
         if (feedViewport.scrollTop + feedViewport.clientHeight >= feedViewport.scrollHeight - 2) {
           feedViewport.scrollTop = 0;
         }
@@ -100,37 +159,64 @@
       requestAnimationFrame(autoScrollStep);
     }
 
-    function renderTweets(articles) {
+    function getCategoryBadge(category) {
+      const cat = (category || 'WORLD').toUpperCase();
+      if (cat.includes('RUSSIA')) return 'bg-red-950/70 text-red-400 border-red-500/40';
+      if (cat.includes('HISTORY') || cat.includes('ARCHIVE')) return 'bg-purple-950/70 text-purple-300 border-purple-500/50';
+      if (cat.includes('CHINA') || cat.includes('ASIA')) return 'bg-amber-950/70 text-amber-300 border-amber-500/40';
+      if (cat.includes('MIDDLE EAST')) return 'bg-emerald-950/70 text-emerald-300 border-emerald-500/40';
+      return 'bg-cyan-950/70 text-cyan-300 border-cyan-500/40';
+    }
+
+    function renderIntercepts(articles) {
       if (!articles || articles.length === 0) return;
 
       const displayList = [...articles, ...articles];
 
-      feedList.innerHTML = displayList.map((item) => {
-        const initials = item.source.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
+      feedList.innerHTML = displayList.map((item, idx) => {
+        const badgeClass = getCategoryBadge(item.category);
         const handle = '@' + item.source.toLowerCase().replace(/[^a-z0-9]/g, '');
-        const timeStr = item.published ? new Date(item.published).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : 'Live';
+        const timeStr = item.published ? new Date(item.published).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : 'LIVE';
+        const hasThumb = item.thumbnail && item.thumbnail.trim() !== '';
 
         return `
-          <article class="p-4 hover:bg-zinc-950/80 transition flex gap-3">
-            <div class="w-10 h-10 rounded-full bg-sky-900/60 border border-sky-500/40 flex items-center justify-center font-bold text-sky-400 text-sm shrink-0">
-              ${initials}
-            </div>
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-1.5 text-sm flex-wrap">
+          <article class="p-4 hover:bg-emerald-950/20 transition flex items-start justify-between gap-3.5">
+            
+            <!-- Left Side: Source Header & Headline -->
+            <div class="flex-1 min-w-0 space-y-1.5">
+              <div class="flex items-center gap-2 flex-wrap font-mono-tech text-xs">
+                <span class="px-1.5 py-0.5 text-[10px] font-bold rounded border ${badgeClass}">
+                  ${item.category || 'INTEL'}
+                </span>
                 <span class="font-bold text-white truncate">${item.source}</span>
-                <svg class="w-4 h-4 text-sky-400 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"/></svg>
-                <span class="text-zinc-500 text-xs">${handle} · ${timeStr}</span>
+                <span class="text-slate-500 text-[11px]">${handle} · ${timeStr}</span>
               </div>
-              <p class="text-[15px] text-zinc-100 mt-1 leading-normal">
-                ${item.title}
+
+              <p class="text-[14.5px] text-slate-100 leading-snug font-medium">
+                <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition">
+                  ${item.title}
+                </a>
               </p>
-              <div class="mt-2 flex items-center justify-between">
-                <span class="text-xs text-sky-400">#${(item.category || 'World').replace(/\s+/g, '')}</span>
-                <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="text-xs text-zinc-400 hover:text-sky-400 border x-border px-2.5 py-1 rounded-full transition">
-                  Read Full Story ↗
+
+              <div class="pt-1 flex items-center gap-4 text-[11px] font-mono-tech text-slate-500">
+                <span>ID // #${1040 + (idx % articles.length)}</span>
+                <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline">
+                  [OPEN SOURCE FILE ↗]
                 </a>
               </div>
             </div>
+
+            <!-- Right Side: Small Tactical Thumbnail -->
+            <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="w-20 h-20 rounded border osint-border bg-[#02060a] overflow-hidden shrink-0 flex items-center justify-center relative group">
+              ${hasThumb ? `
+                <img src="${item.thumbnail}" alt="thumb" class="w-full h-full object-cover group-hover:scale-105 transition" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              ` : ''}
+              <div style="${hasThumb ? 'display:none;' : 'display:flex;'}" class="w-full h-full flex-col items-center justify-center text-emerald-500/50 font-mono-tech text-[9px] text-center p-1">
+                <span>[SIGINT]</span>
+                <span>NO IMG</span>
+              </div>
+            </a>
+
           </article>
         `;
       }).join('');
@@ -139,12 +225,12 @@
     fetch(`latest_news.json?t=${Date.now()}`)
       .then(res => res.json())
       .then(data => {
-        renderTweets(data);
+        renderIntercepts(data);
         requestAnimationFrame(autoScrollStep);
       })
       .catch(() => {
-        renderTweets([
-          { source: "BBC World", category: "World", title: "Welcome to Global News Radio! Your live headlines are loading.", link: "#", published: new Date().toISOString() }
+        renderIntercepts([
+          { source: "OSINT Command", category: "System", title: "Terminal active. Waiting for next 10-minute telemetry sync.", link: "#", thumbnail: "", published: new Date().toISOString() }
         ]);
         requestAnimationFrame(autoScrollStep);
       });
