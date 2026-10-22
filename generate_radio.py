@@ -27,7 +27,7 @@ def main():
     news_items = [a for a in articles if a.get('category') not in ('History', 'ArchiveVault')]
 
     if history_items:
-        script += "First, from our hourly Archive Vault and On This Day feature: "
+        script += "First, from our Archive Vault and On This Day feature: "
         for item in history_items:
             script += f"From {item['source']}: {item['title']}. "
 
