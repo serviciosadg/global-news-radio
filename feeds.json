@@ -1,8 +1,23 @@
 [
   {
-    "name": "BBC World",
-    "url": "http://feeds.bbci.co.uk/news/world/rss.xml",
-    "category": "UK / West"
+    "name": "Aristegui Noticioso",
+    "url": "https://aristeguinoticias.com/feed/",
+    "category": "Mexico"
+  },
+  {
+    "name": "El Universal",
+    "url": "https://www.eluniversal.com.mx/sitemaps/google-news.xml",
+    "category": "Mexico"
+  },
+  {
+    "name": "NPR News",
+    "url": "https://feeds.npr.org/1001/rss.xml",
+    "category": "USA"
+  },
+  {
+    "name": "Associated Press",
+    "url": "https://apnews.com/hub/world-news?output=rss",
+    "category": "USA"
   },
   {
     "name": "RT News",
@@ -15,28 +30,13 @@
     "category": "Russia"
   },
   {
-    "name": "TASS Agency",
-    "url": "https://tass.com/rss/v2.xml",
-    "category": "Russia"
+    "name": "China Daily",
+    "url": "http://www.chinadaily.com.cn/rss/world_rss.xml",
+    "category": "China"
   },
   {
     "name": "Al Jazeera",
     "url": "https://www.aljazeera.com/xml/rss/all.xml",
     "category": "Middle East"
-  },
-  {
-    "name": "China Daily",
-    "url": "http://www.chinadaily.com.cn/rss/world_rss.xml",
-    "category": "China / Asia"
-  },
-  {
-    "name": "France 24",
-    "url": "https://www.france24.com/en/rss",
-    "category": "Europe"
-  },
-  {
-    "name": "MercoPress",
-    "url": "https://en.mercopress.com/rss/",
-    "category": "Latin America"
   }
 ]
