@@ -2,11 +2,41 @@
   {
     "name": "BBC World",
     "url": "http://feeds.bbci.co.uk/news/world/rss.xml",
-    "category": "World"
+    "category": "UK / West"
+  },
+  {
+    "name": "RT News",
+    "url": "https://www.rt.com/rss/news/",
+    "category": "Russia"
+  },
+  {
+    "name": "Sputnik Globe",
+    "url": "https://sputnikglobe.com/export/rss2/archive/index.xml",
+    "category": "Russia"
+  },
+  {
+    "name": "TASS Agency",
+    "url": "https://tass.com/rss/v2.xml",
+    "category": "Russia"
   },
   {
     "name": "Al Jazeera",
     "url": "https://www.aljazeera.com/xml/rss/all.xml",
     "category": "Middle East"
+  },
+  {
+    "name": "China Daily",
+    "url": "http://www.chinadaily.com.cn/rss/world_rss.xml",
+    "category": "China / Asia"
+  },
+  {
+    "name": "France 24",
+    "url": "https://www.france24.com/en/rss",
+    "category": "Europe"
+  },
+  {
+    "name": "MercoPress",
+    "url": "https://en.mercopress.com/rss/",
+    "category": "Latin America"
   }
 ]
