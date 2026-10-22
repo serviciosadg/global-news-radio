@@ -67,7 +67,8 @@
 
           <div>
             <div class="flex items-center gap-2">
-              <h1 class="text-lg font-extrabold tracking-wider text-white font-mono-tech">AlexDiaz Global Radio</h1>
+              <!-- Removed font-extrabold and tracking-wider, keeping it normal weight and white -->
+              <h1 class="text-base text-white font-mono-tech">AlexDiaz Global Radio</h1>
               <span class="bg-cyan-500/20 text-cyan-300 text-[10px] font-mono-tech font-bold px-2 py-0.5 rounded border border-cyan-500/40 animate-pulse">LIVE ON AIR</span>
             </div>
             <p class="text-[11px] font-mono-tech text-emerald-400/80">GLOBAL RSS · COMMUNITY INTEL · ARCHIVE VAULT</p>
@@ -84,7 +85,7 @@
         </div>
       </div>
 
-      <!-- Community Incident Reporter (With AI Verification Scanner) -->
+      <!-- Community Incident Reporter -->
       <div id="breaking-tool-box" class="hidden bg-slate-900/95 border border-red-500/50 rounded-lg p-3 space-y-2.5 shadow-2xl">
         <div class="flex items-center justify-between text-[11px] font-mono-tech text-red-400 font-bold">
           <span>⚡ COMMUNITY INCIDENT & HAZARD INJECTOR</span>
@@ -102,7 +103,7 @@
         </div>
       </div>
 
-      <!-- Audio Broadcast Module (With Timestamp Cache Buster) -->
+      <!-- Audio Broadcast Module -->
       <div class="bg-[#020508] border tech-border rounded-lg p-3 space-y-2">
         <div class="flex items-center justify-between text-[11px] font-mono-tech">
           <span class="text-cyan-400">🎙️ <strong class="text-white">LATEST UPDATE:</strong> AI BRIEFING + ARCHIVE VAULT</span>
@@ -156,7 +157,6 @@
       utcClock.textContent = new Date().toISOString().replace('T', ' ').slice(0, 19) + ' UTC';
     }, 1000);
 
-    // Cache-buster timestamp ensures browser always grabs the newest mp3
     audioSource.src = `news_broadcast.mp3?t=${Date.now()}`;
     radioPlayer.load();
 
@@ -236,7 +236,6 @@
                 </a>
               </p>
 
-              <!-- AI Verification & Community Voting Bar -->
               <div class="bg-black/40 border tech-border rounded p-2 text-[11px] font-mono-tech space-y-1">
                 <div class="text-cyan-400 flex items-center gap-1.5">
                   <span>🤖</span> <span class="text-slate-300">${aiStatus}</span>
@@ -269,7 +268,6 @@
       }).join('');
     }
 
-    // Voting mechanism (Confirm or Flag Fake)
     window.voteItem = function(index, type) {
       if (type === 'confirm') {
         globalArticles[index].confirms = (globalArticles[index].confirms || 0) + 1;
@@ -284,7 +282,6 @@
       renderIntercepts(globalArticles);
     };
 
-    // Submit community incident with simulated AI cross-reference check
     submitBreaking.addEventListener('click', () => {
       const headline = breakingInput.value.trim();
       const author = reporterName.value.trim() || 'Anonymous Resident';
@@ -313,7 +310,6 @@
     fetch(`latest_news.json?t=${Date.now()}`)
       .then(res => res.json())
       .then(data => {
-        // Add default voting stats to loaded items if missing
         const initialized = data.map(item => ({
           ...item,
           confirms: item.confirms || Math.floor(Math.random() * 5) + 1,
