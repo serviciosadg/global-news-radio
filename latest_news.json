@@ -2,10 +2,58 @@
     {
         "source": "NPR News",
         "category": "USA",
-        "title": "Hacking attempts rise after flaws found in program affecting 70 percent of websites",
-        "link": "https://www.npr.org/2026/10/23/g-s1-149503/hacking-php-flaws",
+        "title": "Will a macaque eat a grape sitting on a pile of poo? A study on germaphobia",
+        "link": "https://www.npr.org/2026/10/23/nx-s1-6009527/monkey-macaque-germs-virus-outbreak",
         "thumbnail": "",
-        "published": "Fri, 23 Oct 2026 05:37:38 -0400"
+        "published": "Fri, 23 Oct 2026 10:16:10 -0400"
+    },
+    {
+        "source": "RT News",
+        "category": "Russia",
+        "title": "Melania Trump brokers Russia-Ukraine ceasefire in frontline town \u2013 White House",
+        "link": "https://rt-english.com/news/647580-melania-trump-russia-ukraine-alyoshki-ceasefire/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adb6c9485f5406eea28ce23.jpg",
+        "published": "Fri, 23 Oct 2026 14:20:51 +0000"
+    },
+    {
+        "source": "Al Jazeera",
+        "category": "Middle East",
+        "title": "Finland nearing opening of world\u2019s first permanent nuclear waste repository",
+        "link": "https://www.aljazeera.com/news/2026/10/23/finland-nearing-opening-of-worlds-first-permanent-nuclear-waste-repository?traffic_source=rss",
+        "thumbnail": "",
+        "published": "Fri, 23 Oct 2026 13:50:26 +0000"
+    },
+    {
+        "source": "NPR News",
+        "category": "USA",
+        "title": "Authorities investigating whether first Kenya and Nigeria Ebola cases crossed paths",
+        "link": "https://www.npr.org/2026/10/23/g-s1-149515/africa-ebola-outbreak",
+        "thumbnail": "",
+        "published": "Fri, 23 Oct 2026 08:41:39 -0400"
+    },
+    {
+        "source": "RT News",
+        "category": "Russia",
+        "title": "Europe will have to accept dependence on us \u2013 US tech giant",
+        "link": "https://rt-english.com/news/647563-palantir-european-dependence-nato/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adb44d985f54072104b1212.jpg",
+        "published": "Fri, 23 Oct 2026 11:58:23 +0000"
+    },
+    {
+        "source": "Al Jazeera",
+        "category": "Middle East",
+        "title": "Dembele to miss Ballon d\u2019Or event as PSG game moved amid protests in France",
+        "link": "https://www.aljazeera.com/sports/2026/10/23/dembele-to-miss-ballon-dor-event-as-psg-game-moved-amid-protests-in-france?traffic_source=rss",
+        "thumbnail": "",
+        "published": "Fri, 23 Oct 2026 13:46:12 +0000"
+    },
+    {
+        "source": "NPR News",
+        "category": "USA",
+        "title": "Military reinforcements move to Mideast. And, millions of Americans vote early",
+        "link": "https://www.npr.org/2026/10/23/g-s1-149514/up-first-newsletter-iran-war-midterm-voting-trump-bbc",
+        "thumbnail": "",
+        "published": "Fri, 23 Oct 2026 07:22:25 -0400"
     },
     {
         "source": "RT News",
@@ -18,23 +66,23 @@
     {
         "source": "Al Jazeera",
         "category": "Middle East",
-        "title": "Ultra-Orthodox conscription debate ignites Israel\u2019s election battleground",
-        "link": "https://www.aljazeera.com/news/2026/10/23/ultra-orthodox-conscription-debate-ignites-israels-election-battleground?traffic_source=rss",
+        "title": "Kenya\u2019s marathon champion Peres Jepchirchir provisionally banned by AIU",
+        "link": "https://www.aljazeera.com/sports/2026/10/23/kenyas-marathon-champion-peres-jepchirchir-provisionally-banned-by-aiu?traffic_source=rss",
         "thumbnail": "",
-        "published": "Fri, 23 Oct 2026 09:03:39 +0000"
+        "published": "Fri, 23 Oct 2026 13:45:21 +0000"
     },
     {
         "source": "NPR News",
         "category": "USA",
-        "title": "Brazil's runoff: Lula's legacy vs. Bolsonaro's dynasty",
-        "link": "https://www.npr.org/2026/10/23/nx-s1-6004277/brazil-vote-runoff-lula-bolsonaro",
+        "title": "Why Meta is charging to post more hyperlinks",
+        "link": "https://www.npr.org/sections/planet-money/2026/10/23/nx-s1-6012726/why-meta-is-charging-to-post-more-hyperlinks",
         "thumbnail": "",
-        "published": "Fri, 23 Oct 2026 05:00:00 -0400"
+        "published": "Fri, 23 Oct 2026 07:00:00 -0400"
     },
     {
         "source": "RT News",
         "category": "Russia",
-        "title": "German immigration office hit by human smuggling scandal \u2013 Bild",
+        "title": "German immigration staff charged with smuggling immigrants \u2013 Bild",
         "link": "https://rt-english.com/news/647562-germany-migrant-india-cologne/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
         "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adb1d8520302734814fdae6.jpg",
         "published": "Fri, 23 Oct 2026 08:43:51 +0000"
@@ -42,57 +90,9 @@
     {
         "source": "Al Jazeera",
         "category": "Middle East",
-        "title": "Macron to meet student groups: Where are France\u2019s protests heading?",
-        "link": "https://www.aljazeera.com/news/2026/10/23/we-want-promises-backed-by-results?traffic_source=rss",
+        "title": "Melania Trump \u2018secured ceasefire\u2019 in Ukrainian city Oleshky: White House",
+        "link": "https://www.aljazeera.com/news/2026/10/23/white-house-says-melania-trump-secured-a-ceasefire-in-ukraines-oleshky?traffic_source=rss",
         "thumbnail": "",
-        "published": "Fri, 23 Oct 2026 08:50:23 +0000"
-    },
-    {
-        "source": "NPR News",
-        "category": "USA",
-        "title": "With jet fuel prices near a record, holiday airfares soar higher",
-        "link": "https://www.npr.org/2026/10/23/nx-s1-6009506/jet-fuel-price-holiday-airfare",
-        "thumbnail": "",
-        "published": "Fri, 23 Oct 2026 05:00:00 -0400"
-    },
-    {
-        "source": "RT News",
-        "category": "Russia",
-        "title": "US accuses Canada of election meddling",
-        "link": "https://rt-english.com/news/647550-us-canada-elections-meddling/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adabfe420302732ce7beb58.jpg",
-        "published": "Fri, 23 Oct 2026 02:30:18 +0000"
-    },
-    {
-        "source": "Al Jazeera",
-        "category": "Middle East",
-        "title": "LeBron shrugs off Trump blast in home debut win for Philadelphia 76ers",
-        "link": "https://www.aljazeera.com/sports/2026/10/23/lebron-shrugs-off-trump-blast-in-home-debut-win-for-philadelphia-76ers?traffic_source=rss",
-        "thumbnail": "",
-        "published": "Fri, 23 Oct 2026 08:42:10 +0000"
-    },
-    {
-        "source": "NPR News",
-        "category": "USA",
-        "title": "After nearly 6 years, ex-Myanmar leader Aung San Suu Kyi's son hears her voice",
-        "link": "https://www.npr.org/2026/10/23/nx-s1-6012784/aung-san-suu-kyi-son-phone-call-myanmar",
-        "thumbnail": "",
-        "published": "Fri, 23 Oct 2026 05:00:00 -0400"
-    },
-    {
-        "source": "RT News",
-        "category": "Russia",
-        "title": "Hundreds of houses collapse as powerful earthquake hits China (VIDEOS)",
-        "link": "https://rt-english.com/news/647549-earthquake-china-houses-collapse/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adab6662030273aa76df966.png",
-        "published": "Fri, 23 Oct 2026 01:26:20 +0000"
-    },
-    {
-        "source": "Al Jazeera",
-        "category": "Middle East",
-        "title": "Israeli forces accused of killing disabled man in Syria raid",
-        "link": "https://www.aljazeera.com/video/newsfeed/2026/10/23/israeli-forces-accused-of-killing-disabled-man-in-syria-raid?traffic_source=rss",
-        "thumbnail": "",
-        "published": "Fri, 23 Oct 2026 08:35:44 +0000"
+        "published": "Fri, 23 Oct 2026 13:39:06 +0000"
     }
 ]
