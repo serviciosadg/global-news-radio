@@ -45,7 +45,7 @@
     <div class="bg-emerald-950/40 border-b tech-border px-4 py-1.5 flex items-center justify-between text-[11px] font-mono-tech text-emerald-400">
       <div class="flex items-center gap-2">
         <span class="inline-block w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
-        <span>SYS: ONLINE // DUAL SECTION TERMINAL</span>
+        <span>SYS: ONLINE // SECURE STUDIO GATE</span>
       </div>
       <div id="utc-clock" class="tracking-widest text-cyan-400">UTC 00:00:00Z</div>
     </div>
@@ -70,7 +70,7 @@
               <h1 class="text-base text-white font-mono-tech">AlexDiaz Global Radio</h1>
               <span class="bg-cyan-500/20 text-cyan-300 text-[10px] font-mono-tech font-bold px-2 py-0.5 rounded border border-cyan-500/40 animate-pulse">LIVE</span>
             </div>
-            <p class="text-[11px] font-mono-tech text-emerald-400/80">NEWS FEED & PODCAST CREATOR STUDIO</p>
+            <p class="text-[11px] font-mono-tech text-emerald-400/80">NEWS FEED & PODCAST VAULT</p>
           </div>
         </div>
 
@@ -89,7 +89,6 @@
 
     <!-- SECTION 1: LIVE RADIO & COMMUNITY FEED -->
     <div id="section-radio" class="flex-1 flex flex-col">
-      <!-- Audio Broadcast Module -->
       <div class="p-4 bg-[#020508] border-b tech-border space-y-2">
         <div class="flex items-center justify-between text-[11px] font-mono-tech">
           <span class="text-cyan-400">🎙️ <strong class="text-white">LATEST UPDATE:</strong> AI BRIEFING & VAULT</span>
@@ -100,7 +99,6 @@
         </audio>
       </div>
 
-      <!-- Support & Sponsor Bar -->
       <div class="mx-4 mt-3 bg-gradient-to-r from-cyan-950/70 via-teal-950/50 to-emerald-950/70 border border-cyan-500/40 rounded-lg p-3 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-[0_0_15px_rgba(6,182,212,0.12)]">
         <div class="space-y-0.5 text-center sm:text-left">
           <span class="text-[10px] font-mono-tech font-bold uppercase text-cyan-400 tracking-wider">PARTNER & SUPPORT</span>
@@ -113,7 +111,6 @@
         </div>
       </div>
 
-      <!-- Feed Viewport -->
       <div id="feed-viewport" class="flex-1 overflow-y-auto viewport-scroll max-h-[calc(100vh-320px)] divide-y tech-border mt-3">
         <div id="feed-list" class="divide-y tech-border">
           <p class="p-8 text-emerald-500/60 font-mono-tech text-xs text-center animate-pulse">INITIALIZING GLOBAL TELEMETRY...</p>
@@ -121,43 +118,62 @@
       </div>
     </div>
 
-    <!-- SECTION 2: PODCAST UPLOAD & CREATOR STUDIO -->
+    <!-- SECTION 2: PODCASTS (PUBLIC LISTENING & SECURE CREATOR GATE) -->
     <div id="section-podcasts" class="hidden flex-1 flex flex-col p-4 space-y-4 overflow-y-auto viewport-scroll max-h-[calc(100vh-140px)]">
       
-      <!-- Studio Header Box -->
-      <div class="tech-panel p-4 rounded-lg space-y-2 border border-cyan-500/40">
-        <div class="flex items-center justify-between">
-          <h2 class="text-sm font-bold text-white font-mono-tech uppercase">🎙️ Creator Audio Upload Studio</h2>
-          <span class="text-[10px] font-mono-tech text-cyan-400 bg-cyan-950/80 px-2 py-0.5 rounded border border-cyan-500/40">SEO INDEXED</span>
+      <!-- Studio Header -->
+      <div class="tech-panel p-4 rounded-lg space-y-2 border border-cyan-500/40 flex items-center justify-between">
+        <div>
+          <h2 class="text-sm font-bold text-white font-mono-tech uppercase">🎙️ Public Podcast Episodes</h2>
+          <p class="text-xs text-slate-300">Listen to published episodes below. Google-searchable metadata is active.</p>
         </div>
-        <p class="text-xs text-slate-300">Upload your MP3 episode, add titles and descriptions. Episodes instantly render with Google-searchable JSON-LD podcast metadata.</p>
-      </div>
-
-      <!-- Upload Form -->
-      <div class="tech-panel p-4 rounded-lg space-y-3 border tech-border">
-        <div class="space-y-1">
-          <label class="text-xs font-mono-tech text-emerald-400 font-bold">Episode Title:</label>
-          <input type="text" id="pod-title" placeholder="e.g., Episode 1: Multipolar Geopolitics & Local Infrastructure" class="w-full bg-black/80 border tech-border rounded px-3 py-2 text-xs text-white focus:outline-none focus:border-cyan-400 font-mono-tech" />
-        </div>
-
-        <div class="space-y-1">
-          <label class="text-xs font-mono-tech text-emerald-400 font-bold">Episode Description / Show Notes:</label>
-          <textarea id="pod-desc" rows="3" placeholder="Provide a detailed description of the episode topics. Google indexes this descriptive text for organic search..." class="w-full bg-black/80 border tech-border rounded px-3 py-2 text-xs text-white focus:outline-none focus:border-cyan-400 font-mono-tech resize-none"></textarea>
-        </div>
-
-        <div class="space-y-1">
-          <label class="text-xs font-mono-tech text-emerald-400 font-bold">Select MP3 Audio File:</label>
-          <input type="file" id="pod-file" accept="audio/mp3,audio/mpeg" class="w-full bg-black/80 border tech-border rounded px-3 py-1.5 text-xs text-slate-300 file:mr-4 file:py-1 file:px-3 file:rounded file:border-0 file:text-xs file:font-mono-tech file:bg-cyan-950 file:text-cyan-300 hover:file:bg-cyan-900 cursor-pointer" />
-        </div>
-
-        <button onclick="publishPodcast()" class="w-full bg-gradient-to-r from-cyan-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 text-black font-mono-tech font-bold text-xs py-2 rounded transition shadow-[0_0_12px_rgba(16,185,129,0.35)]">
-          PUBLISH EPISODE & GENERATE SEO SCHEMA 🚀
+        <button id="auth-toggle-btn" onclick="toggleAuthModal()" class="shrink-0 bg-cyan-950 hover:bg-cyan-900 text-cyan-300 border border-cyan-500/50 text-xs font-mono-tech font-bold px-3 py-2 rounded transition">
+          🔐 [CREATOR LOGIN]
         </button>
       </div>
 
-      <!-- Published Podcasts Archive List -->
+      <!-- Creator Authentication Wall Modal (Hidden by Default) -->
+      <div id="creator-auth-wall" class="hidden tech-panel p-4 rounded-lg space-y-3 border border-red-500/40 bg-red-950/20">
+        <div class="flex items-center justify-between text-xs font-mono-tech text-red-400 font-bold">
+          <span>🔒 CREATOR STUDIO AUTHENTICATION</span>
+          <button onclick="toggleAuthModal()" class="text-slate-400 hover:text-white">✕</button>
+        </div>
+        <p class="text-xs text-slate-300">Enter creator credentials to unlock the MP3 upload studio.</p>
+        <div class="space-y-2">
+          <input type="text" id="auth-user" placeholder="Username" class="w-full bg-black/80 border tech-border rounded px-3 py-1.5 text-xs text-white focus:outline-none focus:border-cyan-400 font-mono-tech" />
+          <input type="password" id="auth-pass" placeholder="Password" class="w-full bg-black/80 border tech-border rounded px-3 py-1.5 text-xs text-white focus:outline-none focus:border-cyan-400 font-mono-tech" />
+          <button onclick="verifyCreatorLogin()" class="w-full bg-red-600 hover:bg-red-500 text-white font-mono-tech text-xs py-2 rounded font-bold transition">
+            AUTHENTICATE & UNLOCK STUDIO
+          </button>
+        </div>
+      </div>
+
+      <!-- Upload Studio Panel (Unlocked Only After Login) -->
+      <div id="creator-studio-panel" class="hidden tech-panel p-4 rounded-lg space-y-3 border border-emerald-500/50 bg-emerald-950/10">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-mono-tech text-emerald-400 font-bold uppercase">🔓 UPLOAD STUDIO UNLOCKED</span>
+          <button onclick="creatorLogout()" class="text-[10px] font-mono-tech text-slate-400 hover:text-white">[LOGOUT]</button>
+        </div>
+        <div class="space-y-1">
+          <label class="text-xs font-mono-tech text-emerald-400 font-bold">Episode Title:</label>
+          <input type="text" id="pod-title" placeholder="e.g., Episode 1: Geopolitics" class="w-full bg-black/80 border tech-border rounded px-3 py-2 text-xs text-white focus:outline-none focus:border-cyan-400 font-mono-tech" />
+        </div>
+        <div class="space-y-1">
+          <label class="text-xs font-mono-tech text-emerald-400 font-bold">Description / Show Notes:</label>
+          <textarea id="pod-desc" rows="2" placeholder="Episode show notes for Google SEO indexing..." class="w-full bg-black/80 border tech-border rounded px-3 py-2 text-xs text-white focus:outline-none focus:border-cyan-400 font-mono-tech resize-none"></textarea>
+        </div>
+        <div class="space-y-1">
+          <label class="text-xs font-mono-tech text-emerald-400 font-bold">MP3 Audio File:</label>
+          <input type="file" id="pod-file" accept="audio/mp3,audio/mpeg" class="w-full bg-black/80 border tech-border rounded px-3 py-1.5 text-xs text-slate-300 file:mr-4 file:py-1 file:px-3 file:rounded file:border-0 file:text-xs file:font-mono-tech file:bg-cyan-950 file:text-cyan-300 cursor-pointer" />
+        </div>
+        <button onclick="publishPodcast()" class="w-full bg-gradient-to-r from-cyan-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 text-black font-mono-tech font-bold text-xs py-2 rounded transition">
+          PUBLISH EPISODE 🚀
+        </button>
+      </div>
+
+      <!-- Public Podcast Archive List (Always Visible for Listening) -->
       <div class="space-y-2">
-        <h3 class="text-xs font-mono-tech text-cyan-400 font-bold uppercase">Published Podcast Archive:</h3>
+        <h3 class="text-xs font-mono-tech text-cyan-400 font-bold uppercase">Podcast Episodes Archive:</h3>
         <div id="podcast-archive-list" class="space-y-3">
           <!-- Rendered dynamically -->
         </div>
@@ -177,11 +193,9 @@
 
   </div>
 
-  <!-- Dynamic Google Podcast SEO Schema Container -->
   <div id="seo-schema-container"></div>
 
   <script>
-    // Tab Section Switching Logic
     function switchSection(section) {
       const radioSec = document.getElementById('section-radio');
       const podSec = document.getElementById('section-podcasts');
@@ -201,7 +215,6 @@
       }
     }
 
-    // UTC Clock & Audio Initialization
     const utcClock = document.getElementById('utc-clock');
     const audioSource = document.getElementById('audio-source');
     const radioPlayer = document.getElementById('radio-player');
@@ -213,7 +226,42 @@
     audioSource.src = `news_broadcast.mp3?t=${Date.now()}`;
     radioPlayer.load();
 
-    // Podcast Local Storage & Publishing Manager
+    // Authentication Logic
+    function toggleAuthModal() {
+      const wall = document.getElementById('creator-auth-wall');
+      wall.classList.toggle('hidden');
+    }
+
+    function verifyCreatorLogin() {
+      const user = document.getElementById('auth-user').value.trim();
+      const pass = document.getElementById('auth-pass').value.trim();
+
+      // Creator Credentials
+      if (user === 'admin' && pass === 'radio2026') {
+        localStorage.setItem('creator_authenticated', 'true');
+        document.getElementById('creator-auth-wall').classList.add('hidden');
+        document.getElementById('creator-studio-panel').classList.remove('hidden');
+        document.getElementById('auth-toggle-btn').classList.add('hidden');
+        alert('Studio Unlocked Successfully!');
+      } else {
+        alert('Invalid Creator Username or Password.');
+      }
+    }
+
+    function creatorLogout() {
+      localStorage.removeItem('creator_authenticated');
+      document.getElementById('creator-studio-panel').classList.add('hidden');
+      document.getElementById('auth-toggle-btn').classList.remove('hidden');
+    }
+
+    // Check on load if already logged in
+    window.addEventListener('DOMContentLoaded', () => {
+      if (localStorage.getItem('creator_authenticated') === 'true') {
+        document.getElementById('creator-studio-panel').classList.remove('hidden');
+        document.getElementById('auth-toggle-btn').classList.add('hidden');
+      }
+    });
+
     let podcasts = JSON.parse(localStorage.getItem('alex_podcasts') || '[]');
 
     function renderPodcasts() {
@@ -221,7 +269,7 @@
       const schemaContainer = document.getElementById('seo-schema-container');
 
       if (podcasts.length === 0) {
-        archiveList.innerHTML = `<p class="text-xs font-mono-tech text-slate-500 italic p-3">No custom podcast episodes uploaded yet. Use the form above to publish your first MP3 episode.</p>`;
+        archiveList.innerHTML = `<p class="text-xs font-mono-tech text-slate-500 italic p-3">No podcast episodes published yet.</p>`;
         schemaContainer.innerHTML = '';
         return;
       }
@@ -229,7 +277,6 @@
       let schemaJSONList = [];
 
       archiveList.innerHTML = podcasts.map((pod, idx) => {
-        // Generate Google Searchable PodcastEpisode JSON-LD Schema
         schemaJSONList.push({
           "@context": "https://schema.org",
           "@type": "PodcastEpisode",
@@ -241,6 +288,8 @@
             "contentUrl": pod.audioUrl
           }
         });
+
+        const isLoggedIn = localStorage.getItem('creator_authenticated') === 'true';
 
         return `
           <div class="tech-panel p-3.5 rounded-lg space-y-2 border tech-border">
@@ -255,13 +304,12 @@
             </audio>
             <div class="flex justify-between items-center text-[10px] font-mono-tech text-emerald-400 pt-1">
               <span>GOOGLE SEARCH SCHEMA: ACTIVE ✓</span>
-              <button onclick="deletePodcast(${idx})" class="text-red-400 hover:underline">[DELETE EPISODE]</button>
+              ${isLoggedIn ? `<button onclick="deletePodcast(${idx})" class="text-red-400 hover:underline">[DELETE EPISODE]</button>` : ''}
             </div>
           </div>
         `;
       }).join('');
 
-      // Inject structured schema into DOM for Googlebot indexing
       schemaContainer.innerHTML = `<script type="application/ld+json">${JSON.stringify(schemaJSONList)}<\/script>`;
     }
 
@@ -275,8 +323,7 @@
         return;
       }
 
-      // Convert uploaded local file to a local object URL (or handle base64 storage)
-      let audioUrl = "https://www.w3schools.com/html/horse.mp3"; // Fallback demo audio if no file selected
+      let audioUrl = "https://www.w3schools.com/html/horse.mp3";
       if (fileInput.files && fileInput.files[0]) {
         audioUrl = URL.createObjectURL(fileInput.files[0]);
       }
@@ -291,30 +338,27 @@
       podcasts.unshift(newEpisode);
       localStorage.setItem('alex_podcasts', JSON.stringify(podcasts));
 
-      // Reset form
       document.getElementById('pod-title').value = '';
       document.getElementById('pod-desc').value = '';
       fileInput.value = '';
 
       renderPodcasts();
-      alert('Podcast episode published successfully and indexed for Google search!');
-      switchSection('podcasts');
+      alert('Podcast episode published and indexed for Google search!');
     }
 
     window.deletePodcast = function(index) {
-      if (confirm('Are you sure you want to delete this episode?')) {
+      if (confirm('Delete this episode?')) {
         podcasts.splice(index, 1);
         localStorage.setItem('alex_podcasts', JSON.stringify(podcasts));
         renderPodcasts();
       }
     };
 
-    // Load initial RSS feed into Radio Section
     fetch(`latest_news.json?t=${Date.now()}`)
       .then(res => res.json())
       .then(data => {
         const feedList = document.getElementById('feed-list');
-        feedList.innerHTML = data.map((item, idx) => `
+        feedList.innerHTML = data.map((item) => `
           <article class="p-4 hover:bg-emerald-950/20 transition flex items-start justify-between gap-3.5">
             <div class="flex-1 min-w-0 space-y-1.5">
               <div class="flex items-center gap-2 flex-wrap font-mono-tech text-xs">
