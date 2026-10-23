@@ -45,7 +45,7 @@
     <div class="bg-emerald-950/40 border-b tech-border px-4 py-1.5 flex items-center justify-between text-[11px] font-mono-tech text-emerald-400">
       <div class="flex items-center gap-2">
         <span class="inline-block w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
-        <span>SYS: ONLINE // SECURE STUDIO GATE</span>
+        <span>SYS: ONLINE // LIVE GLOBAL TELEMETRY</span>
       </div>
       <div id="utc-clock" class="tracking-widest text-cyan-400">UTC 00:00:00Z</div>
     </div>
@@ -113,7 +113,7 @@
 
       <div id="feed-viewport" class="flex-1 overflow-y-auto viewport-scroll max-h-[calc(100vh-320px)] divide-y tech-border mt-3">
         <div id="feed-list" class="divide-y tech-border">
-          <p class="p-8 text-emerald-500/60 font-mono-tech text-xs text-center animate-pulse">INITIALIZING GLOBAL TELEMETRY...</p>
+          <p class="p-8 text-emerald-500/60 font-mono-tech text-xs text-center animate-pulse">FETCHING FRESH GLOBAL TELEMETRY...</p>
         </div>
       </div>
     </div>
@@ -121,7 +121,6 @@
     <!-- SECTION 2: PODCASTS (PUBLIC LISTENING & SECURE CREATOR GATE) -->
     <div id="section-podcasts" class="hidden flex-1 flex flex-col p-4 space-y-4 overflow-y-auto viewport-scroll max-h-[calc(100vh-140px)]">
       
-      <!-- Studio Header -->
       <div class="tech-panel p-4 rounded-lg space-y-2 border border-cyan-500/40 flex items-center justify-between">
         <div>
           <h2 class="text-sm font-bold text-white font-mono-tech uppercase">🎙️ Public Podcast Episodes</h2>
@@ -132,7 +131,6 @@
         </button>
       </div>
 
-      <!-- Creator Authentication Wall Modal (Hidden by Default) -->
       <div id="creator-auth-wall" class="hidden tech-panel p-4 rounded-lg space-y-3 border border-red-500/40 bg-red-950/20">
         <div class="flex items-center justify-between text-xs font-mono-tech text-red-400 font-bold">
           <span>🔒 CREATOR STUDIO AUTHENTICATION</span>
@@ -148,7 +146,6 @@
         </div>
       </div>
 
-      <!-- Upload Studio Panel (Unlocked Only After Login) -->
       <div id="creator-studio-panel" class="hidden tech-panel p-4 rounded-lg space-y-3 border border-emerald-500/50 bg-emerald-950/10">
         <div class="flex items-center justify-between">
           <span class="text-xs font-mono-tech text-emerald-400 font-bold uppercase">🔓 UPLOAD STUDIO UNLOCKED</span>
@@ -171,7 +168,6 @@
         </button>
       </div>
 
-      <!-- Public Podcast Archive List (Always Visible for Listening) -->
       <div class="space-y-2">
         <h3 class="text-xs font-mono-tech text-cyan-400 font-bold uppercase">Podcast Episodes Archive:</h3>
         <div id="podcast-archive-list" class="space-y-3">
@@ -226,22 +222,20 @@
     audioSource.src = `news_broadcast.mp3?t=${Date.now()}`;
     radioPlayer.load();
 
-    // Authentication Logic
     function toggleAuthModal() {
-      const wall = document.getElementById('creator-auth-wall');
-      wall.classList.toggle('hidden');
+      document.getElementById('creator-auth-wall').classList.toggle('hidden');
     }
 
     function verifyCreatorLogin() {
       const user = document.getElementById('auth-user').value.trim();
       const pass = document.getElementById('auth-pass').value.trim();
 
-      // Creator Credentials
       if (user === 'admin' && pass === 'radio2026') {
         localStorage.setItem('creator_authenticated', 'true');
         document.getElementById('creator-auth-wall').classList.add('hidden');
         document.getElementById('creator-studio-panel').classList.remove('hidden');
         document.getElementById('auth-toggle-btn').classList.add('hidden');
+        renderPodcasts();
         alert('Studio Unlocked Successfully!');
       } else {
         alert('Invalid Creator Username or Password.');
@@ -252,9 +246,9 @@
       localStorage.removeItem('creator_authenticated');
       document.getElementById('creator-studio-panel').classList.add('hidden');
       document.getElementById('auth-toggle-btn').classList.remove('hidden');
+      renderPodcasts();
     }
 
-    // Check on load if already logged in
     window.addEventListener('DOMContentLoaded', () => {
       if (localStorage.getItem('creator_authenticated') === 'true') {
         document.getElementById('creator-studio-panel').classList.remove('hidden');
@@ -354,28 +348,37 @@
       }
     };
 
+    // Aggressive cache-buster timestamp ensures browser always loads freshly fetched RSS news items
     fetch(`latest_news.json?t=${Date.now()}`)
       .then(res => res.json())
       .then(data => {
         const feedList = document.getElementById('feed-list');
-        feedList.innerHTML = data.map((item) => `
-          <article class="p-4 hover:bg-emerald-950/20 transition flex items-start justify-between gap-3.5">
-            <div class="flex-1 min-w-0 space-y-1.5">
-              <div class="flex items-center gap-2 flex-wrap font-mono-tech text-xs">
-                <span class="px-1.5 py-0.5 text-[10px] font-bold rounded border bg-cyan-950/70 text-cyan-300 border-cyan-500/40">
-                  ${item.category || 'WORLD'}
-                </span>
-                <span class="font-bold text-white truncate">${item.source}</span>
+        if (!data || data.length === 0) {
+          feedList.innerHTML = `<p class="p-8 text-emerald-500/60 font-mono-tech text-xs text-center">No feeds currently available.</p>`;
+          return;
+        }
+        feedList.innerHTML = data.map((item) => {
+          return `
+            <article class="p-4 hover:bg-emerald-950/20 transition flex items-start justify-between gap-3.5">
+              <div class="flex-1 min-w-0 space-y-1.5">
+                <div class="flex items-center gap-2 flex-wrap font-mono-tech text-xs">
+                  <span class="px-1.5 py-0.5 text-[10px] font-bold rounded border bg-cyan-950/70 text-cyan-300 border-cyan-500/40">
+                    ${item.category || 'WORLD'}
+                  </span>
+                  <span class="font-bold text-white truncate">${item.source}</span>
+                </div>
+                <p class="text-[14.5px] text-slate-100 leading-snug font-medium">
+                  <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition">
+                    ${item.title}
+                  </a>
+                </p>
               </div>
-              <p class="text-[14.5px] text-slate-100 leading-snug font-medium">
-                <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition">
-                  ${item.title}
-                </a>
-              </p>
-            </div>
-          </article>
-        `).join('');
-      }).catch(() => {});
+            </article>
+          `;
+        }).join('');
+      }).catch(() => {
+        document.getElementById('feed-list').innerHTML = `<p class="p-8 text-red-400 font-mono-tech text-xs text-center">Error loading news feed telemetry.</p>`;
+      });
 
     renderPodcasts();
   </script>
