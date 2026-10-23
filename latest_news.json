@@ -2,6 +2,30 @@
     {
         "source": "NPR News",
         "category": "USA",
+        "title": "The Pentagon's guidelines for \"responsible AI\" aren't always followed, report shows",
+        "link": "https://www.npr.org/2026/10/23/nx-s1-6012296/ai-department-of-defense-war",
+        "thumbnail": "",
+        "published": "Fri, 23 Oct 2026 15:31:15 -0400"
+    },
+    {
+        "source": "RT News",
+        "category": "Russia",
+        "title": "At least seven killed in \u2018terror attack\u2019 on church funeral in Jordan (VIDEOS)",
+        "link": "https://rt-english.com/news/647594-jordan-church-terrorist-attack/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adbcee72030270795735537.png",
+        "published": "Fri, 23 Oct 2026 21:21:29 +0000"
+    },
+    {
+        "source": "Al Jazeera",
+        "category": "Middle East",
+        "title": "\u2018Generation Right\u2019: Israeli youth show strong support for the right",
+        "link": "https://www.aljazeera.com/news/2026/10/23/generation-right-israeli-youth-show-strong-support-for-the-right?traffic_source=rss",
+        "thumbnail": "",
+        "published": "Fri, 23 Oct 2026 20:52:32 +0000"
+    },
+    {
+        "source": "NPR News",
+        "category": "USA",
         "title": "Ohio could decide control of the Senate. Its rural voters might decide the winner",
         "link": "https://www.npr.org/2026/10/23/nx-s1-6012809/ohio-senate-governor-election-rural-voters",
         "thumbnail": "",
@@ -10,18 +34,18 @@
     {
         "source": "RT News",
         "category": "Russia",
-        "title": "Anduril\u2019s Palmer Luckey launches genetically-engineered \u2018war dogs\u2019 startup",
-        "link": "https://rt-english.com/news/647570-us-genetically-engineered-war-dogs/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adb54812030276c8f2fb5e9.jpg",
-        "published": "Fri, 23 Oct 2026 18:05:19 +0000"
+        "title": "Serbia at a crossroads: What\u2019s at stake and what Moscow can expect",
+        "link": "https://rt-english.com/news/647523-serbia-elections-vucic-russia/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6ada2eb9203027799507e2e0.jpg",
+        "published": "Fri, 23 Oct 2026 21:21:17 +0000"
     },
     {
         "source": "Al Jazeera",
         "category": "Middle East",
-        "title": "Trump administration sues to block possible Democratic win in Alaska",
-        "link": "https://www.aljazeera.com/news/2026/10/23/trump-administration-sues-to-block-possible-democratic-win-in-alaska?traffic_source=rss",
+        "title": "FCC Democrat warns broadcasters to resist Trump\u2019s media pressure tactics",
+        "link": "https://www.aljazeera.com/economy/2026/10/23/fcc-democrat-warns-broadcasters-to-resist-trumps-media-pressure-tactics?traffic_source=rss",
         "thumbnail": "",
-        "published": "Fri, 23 Oct 2026 17:57:54 +0000"
+        "published": "Fri, 23 Oct 2026 20:44:14 +0000"
     },
     {
         "source": "NPR News",
@@ -34,18 +58,18 @@
     {
         "source": "RT News",
         "category": "Russia",
-        "title": "Netanyahu orders blockade of West Bank",
-        "link": "https://rt-english.com/news/647590-netanyahu-west-bank-blockade/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adb95e885f54001f74fc25d.jpg",
-        "published": "Fri, 23 Oct 2026 17:14:28 +0000"
+        "title": "Peace talks, Zelensky, the EU, \u2018political schizophrenia\u2019 and a new Cold War: RT stories that shaped the week",
+        "link": "https://rt-english.com/news/647589-rt-top-stories-putin-zelensky-witkoff/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adb86ce85f5407ef84998fa.png",
+        "published": "Fri, 23 Oct 2026 21:04:09 +0000"
     },
     {
         "source": "Al Jazeera",
         "category": "Middle East",
-        "title": "Many feared trapped after multistorey building collapses in Kenya",
-        "link": "https://www.aljazeera.com/news/2026/10/23/many-feared-trapped-after-multistorey-building-collapses-in-kenya?traffic_source=rss",
+        "title": "Time \u2018running out\u2019 to reach Yemen\u2019s Taiz amid deepening crisis, UN says",
+        "link": "https://www.aljazeera.com/news/2026/10/23/time-running-out-to-reach-yemens-taiz-amid-deepening-crisis-un-says?traffic_source=rss",
         "thumbnail": "",
-        "published": "Fri, 23 Oct 2026 17:49:04 +0000"
+        "published": "Fri, 23 Oct 2026 20:44:02 +0000"
     },
     {
         "source": "NPR News",
@@ -58,41 +82,17 @@
     {
         "source": "RT News",
         "category": "Russia",
-        "title": "Democracy for whom? Palestinians shut out of Israeli vote \u2013 RT reports (VIDEO)",
-        "link": "https://rt-english.com/news/647585-palestinians-israeli-parliament-vote/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adb7ef120302771972579c8.jpg",
-        "published": "Fri, 23 Oct 2026 15:52:41 +0000"
+        "title": "Former BBC DJ appears in court on sex charges",
+        "link": "https://rt-english.com/news/647591-uk-bbc-westwood-sex-offences/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adbaade2030276f776ef3d2.jpg",
+        "published": "Fri, 23 Oct 2026 20:46:10 +0000"
     },
     {
         "source": "Al Jazeera",
         "category": "Middle East",
-        "title": "Yamal, Mbappe in El Clasico spotlight as 40 cameras dedicated to coverage",
-        "link": "https://www.aljazeera.com/sports/2026/10/23/yamal-mbappe-in-el-clasico-spotlight-as-40-cameras-dedicated-to-coverage?traffic_source=rss",
+        "title": "Why is the UK at the forefront of AI-driven job cuts?",
+        "link": "https://www.aljazeera.com/video/inside-story/2026/10/23/why-is-the-uk-at-the-forefront-of-ai-driven-job-cuts?traffic_source=rss",
         "thumbnail": "",
-        "published": "Fri, 23 Oct 2026 17:47:20 +0000"
-    },
-    {
-        "source": "NPR News",
-        "category": "USA",
-        "title": "Will a macaque eat a grape sitting on a pile of poo? A study on germophobia",
-        "link": "https://www.npr.org/2026/10/23/nx-s1-6009527/monkey-macaque-germs-virus-outbreak",
-        "thumbnail": "",
-        "published": "Fri, 23 Oct 2026 10:16:10 -0400"
-    },
-    {
-        "source": "RT News",
-        "category": "Russia",
-        "title": "Pentagon cracks down on insider betting \u2013 AP",
-        "link": "https://rt-english.com/news/647587-us-pentagon-insider-trading/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adb77ed2030275e385f9cc8.jpg",
-        "published": "Fri, 23 Oct 2026 15:08:05 +0000"
-    },
-    {
-        "source": "Al Jazeera",
-        "category": "Middle East",
-        "title": "Bayern coach Kompany taken to hospital after collapsing during training",
-        "link": "https://www.aljazeera.com/sports/2026/10/23/bayern-coach-kompany-taken-to-hospital-after-collapsing-during-training?traffic_source=rss",
-        "thumbnail": "",
-        "published": "Fri, 23 Oct 2026 17:44:05 +0000"
+        "published": "Fri, 23 Oct 2026 20:43:47 +0000"
     }
 ]
