@@ -2,7 +2,79 @@
     {
         "source": "NPR News",
         "category": "USA",
-        "title": "Will a macaque eat a grape sitting on a pile of poo? A study on germaphobia",
+        "title": "Ohio could decide control of the Senate. Its rural voters might decide the winner",
+        "link": "https://www.npr.org/2026/10/23/nx-s1-6012809/ohio-senate-governor-election-rural-voters",
+        "thumbnail": "",
+        "published": "Fri, 23 Oct 2026 14:30:00 -0400"
+    },
+    {
+        "source": "RT News",
+        "category": "Russia",
+        "title": "Anduril\u2019s Palmer Luckey launches genetically-engineered \u2018war dogs\u2019 startup",
+        "link": "https://rt-english.com/news/647570-us-genetically-engineered-war-dogs/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adb54812030276c8f2fb5e9.jpg",
+        "published": "Fri, 23 Oct 2026 18:05:19 +0000"
+    },
+    {
+        "source": "Al Jazeera",
+        "category": "Middle East",
+        "title": "Trump administration sues to block possible Democratic win in Alaska",
+        "link": "https://www.aljazeera.com/news/2026/10/23/trump-administration-sues-to-block-possible-democratic-win-in-alaska?traffic_source=rss",
+        "thumbnail": "",
+        "published": "Fri, 23 Oct 2026 17:57:54 +0000"
+    },
+    {
+        "source": "NPR News",
+        "category": "USA",
+        "title": "A D.C. park was made 'for the pleasure of the people.' Trump's plan would change that",
+        "link": "https://www.npr.org/2026/10/23/nx-s1-6010488/east-potomac-trump-golf-hains-point",
+        "thumbnail": "",
+        "published": "Fri, 23 Oct 2026 13:35:14 -0400"
+    },
+    {
+        "source": "RT News",
+        "category": "Russia",
+        "title": "Netanyahu orders blockade of West Bank",
+        "link": "https://rt-english.com/news/647590-netanyahu-west-bank-blockade/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adb95e885f54001f74fc25d.jpg",
+        "published": "Fri, 23 Oct 2026 17:14:28 +0000"
+    },
+    {
+        "source": "Al Jazeera",
+        "category": "Middle East",
+        "title": "Many feared trapped after multistorey building collapses in Kenya",
+        "link": "https://www.aljazeera.com/news/2026/10/23/many-feared-trapped-after-multistorey-building-collapses-in-kenya?traffic_source=rss",
+        "thumbnail": "",
+        "published": "Fri, 23 Oct 2026 17:49:04 +0000"
+    },
+    {
+        "source": "NPR News",
+        "category": "USA",
+        "title": "Ex-FBI employees charged with lying to Congress over Hunter Biden inquiries",
+        "link": "https://www.npr.org/2026/10/23/g-s1-149534/justice-fbi-charged-hunter-biden-laptop",
+        "thumbnail": "",
+        "published": "Fri, 23 Oct 2026 11:51:04 -0400"
+    },
+    {
+        "source": "RT News",
+        "category": "Russia",
+        "title": "Democracy for whom? Palestinians shut out of Israeli vote \u2013 RT reports (VIDEO)",
+        "link": "https://rt-english.com/news/647585-palestinians-israeli-parliament-vote/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adb7ef120302771972579c8.jpg",
+        "published": "Fri, 23 Oct 2026 15:52:41 +0000"
+    },
+    {
+        "source": "Al Jazeera",
+        "category": "Middle East",
+        "title": "Yamal, Mbappe in El Clasico spotlight as 40 cameras dedicated to coverage",
+        "link": "https://www.aljazeera.com/sports/2026/10/23/yamal-mbappe-in-el-clasico-spotlight-as-40-cameras-dedicated-to-coverage?traffic_source=rss",
+        "thumbnail": "",
+        "published": "Fri, 23 Oct 2026 17:47:20 +0000"
+    },
+    {
+        "source": "NPR News",
+        "category": "USA",
+        "title": "Will a macaque eat a grape sitting on a pile of poo? A study on germophobia",
         "link": "https://www.npr.org/2026/10/23/nx-s1-6009527/monkey-macaque-germs-virus-outbreak",
         "thumbnail": "",
         "published": "Fri, 23 Oct 2026 10:16:10 -0400"
@@ -10,89 +82,17 @@
     {
         "source": "RT News",
         "category": "Russia",
-        "title": "Melania Trump brokers Russia-Ukraine ceasefire in frontline town \u2013 White House",
-        "link": "https://rt-english.com/news/647580-melania-trump-russia-ukraine-alyoshki-ceasefire/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adb6c9485f5406eea28ce23.jpg",
-        "published": "Fri, 23 Oct 2026 14:20:51 +0000"
+        "title": "Pentagon cracks down on insider betting \u2013 AP",
+        "link": "https://rt-english.com/news/647587-us-pentagon-insider-trading/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adb77ed2030275e385f9cc8.jpg",
+        "published": "Fri, 23 Oct 2026 15:08:05 +0000"
     },
     {
         "source": "Al Jazeera",
         "category": "Middle East",
-        "title": "Finland nearing opening of world\u2019s first permanent nuclear waste repository",
-        "link": "https://www.aljazeera.com/news/2026/10/23/finland-nearing-opening-of-worlds-first-permanent-nuclear-waste-repository?traffic_source=rss",
+        "title": "Bayern coach Kompany taken to hospital after collapsing during training",
+        "link": "https://www.aljazeera.com/sports/2026/10/23/bayern-coach-kompany-taken-to-hospital-after-collapsing-during-training?traffic_source=rss",
         "thumbnail": "",
-        "published": "Fri, 23 Oct 2026 13:50:26 +0000"
-    },
-    {
-        "source": "NPR News",
-        "category": "USA",
-        "title": "Authorities investigating whether first Kenya and Nigeria Ebola cases crossed paths",
-        "link": "https://www.npr.org/2026/10/23/g-s1-149515/africa-ebola-outbreak",
-        "thumbnail": "",
-        "published": "Fri, 23 Oct 2026 08:41:39 -0400"
-    },
-    {
-        "source": "RT News",
-        "category": "Russia",
-        "title": "Europe will have to accept dependence on us \u2013 US tech giant",
-        "link": "https://rt-english.com/news/647563-palantir-european-dependence-nato/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adb44d985f54072104b1212.jpg",
-        "published": "Fri, 23 Oct 2026 11:58:23 +0000"
-    },
-    {
-        "source": "Al Jazeera",
-        "category": "Middle East",
-        "title": "Dembele to miss Ballon d\u2019Or event as PSG game moved amid protests in France",
-        "link": "https://www.aljazeera.com/sports/2026/10/23/dembele-to-miss-ballon-dor-event-as-psg-game-moved-amid-protests-in-france?traffic_source=rss",
-        "thumbnail": "",
-        "published": "Fri, 23 Oct 2026 13:46:12 +0000"
-    },
-    {
-        "source": "NPR News",
-        "category": "USA",
-        "title": "Military reinforcements move to Mideast. And, millions of Americans vote early",
-        "link": "https://www.npr.org/2026/10/23/g-s1-149514/up-first-newsletter-iran-war-midterm-voting-trump-bbc",
-        "thumbnail": "",
-        "published": "Fri, 23 Oct 2026 07:22:25 -0400"
-    },
-    {
-        "source": "RT News",
-        "category": "Russia",
-        "title": "Trump turns to Cold War-era law to tackle fuel crisis",
-        "link": "https://rt-english.com/news/647565-trump-cold-war-law-fuel-crisis/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adb20e820302736cb4fadb1.jpg",
-        "published": "Fri, 23 Oct 2026 08:58:37 +0000"
-    },
-    {
-        "source": "Al Jazeera",
-        "category": "Middle East",
-        "title": "Kenya\u2019s marathon champion Peres Jepchirchir provisionally banned by AIU",
-        "link": "https://www.aljazeera.com/sports/2026/10/23/kenyas-marathon-champion-peres-jepchirchir-provisionally-banned-by-aiu?traffic_source=rss",
-        "thumbnail": "",
-        "published": "Fri, 23 Oct 2026 13:45:21 +0000"
-    },
-    {
-        "source": "NPR News",
-        "category": "USA",
-        "title": "Why Meta is charging to post more hyperlinks",
-        "link": "https://www.npr.org/sections/planet-money/2026/10/23/nx-s1-6012726/why-meta-is-charging-to-post-more-hyperlinks",
-        "thumbnail": "",
-        "published": "Fri, 23 Oct 2026 07:00:00 -0400"
-    },
-    {
-        "source": "RT News",
-        "category": "Russia",
-        "title": "German immigration staff charged with smuggling immigrants \u2013 Bild",
-        "link": "https://rt-english.com/news/647562-germany-migrant-india-cologne/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adb1d8520302734814fdae6.jpg",
-        "published": "Fri, 23 Oct 2026 08:43:51 +0000"
-    },
-    {
-        "source": "Al Jazeera",
-        "category": "Middle East",
-        "title": "Melania Trump \u2018secured ceasefire\u2019 in Ukrainian city Oleshky: White House",
-        "link": "https://www.aljazeera.com/news/2026/10/23/white-house-says-melania-trump-secured-a-ceasefire-in-ukraines-oleshky?traffic_source=rss",
-        "thumbnail": "",
-        "published": "Fri, 23 Oct 2026 13:39:06 +0000"
+        "published": "Fri, 23 Oct 2026 17:44:05 +0000"
     }
 ]
