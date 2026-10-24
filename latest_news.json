@@ -2,6 +2,30 @@
     {
         "source": "NPR News",
         "category": "USA",
+        "title": "Severe flooding hits Four Corners region, more expected through the weekend",
+        "link": "https://www.npr.org/2026/10/23/nx-s1-6014742/flooding-weather-four-corners",
+        "thumbnail": "",
+        "published": "Fri, 23 Oct 2026 20:40:42 -0400"
+    },
+    {
+        "source": "RT News",
+        "category": "Russia",
+        "title": "Syrian migrant walked free after raping teen in Germany \u2013 media",
+        "link": "https://rt-english.com/news/647586-syrian-migrant-rape-teen-germany/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adb7aad203027687902d313.jpg",
+        "published": "Sat, 24 Oct 2026 02:22:09 +0000"
+    },
+    {
+        "source": "Al Jazeera",
+        "category": "Middle East",
+        "title": "Century-old mosque near Indian PM\u2019s residence under gov\u2019t threat",
+        "link": "https://www.aljazeera.com/video/newsfeed/2026/10/24/century-old-mosque-near-indian-pms-residence-under-govt-threat?traffic_source=rss",
+        "thumbnail": "",
+        "published": "Sat, 24 Oct 2026 02:53:24 +0000"
+    },
+    {
+        "source": "NPR News",
+        "category": "USA",
         "title": "The Pentagon's guidelines for \"responsible AI\" aren't always followed, report shows",
         "link": "https://www.npr.org/2026/10/23/nx-s1-6012296/ai-department-of-defense-war",
         "thumbnail": "",
@@ -10,18 +34,18 @@
     {
         "source": "RT News",
         "category": "Russia",
-        "title": "How the Cambridge Analytica scandal still haunts Mark Zuckerberg",
-        "link": "https://rt-english.com/news/647592-meta-zuckerberg-cambridge-analytica/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adba38885f5400fce72e34f.jpg",
-        "published": "Fri, 23 Oct 2026 23:13:03 +0000"
+        "title": "Zelensky accuses Trump of \u2018totally false\u2019 statements",
+        "link": "https://rt-english.com/news/647593-zelensky-trump-totally-false/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adbad5a85f5400fce72e35b.jpg",
+        "published": "Fri, 23 Oct 2026 23:58:43 +0000"
     },
     {
         "source": "Al Jazeera",
         "category": "Middle East",
-        "title": "Macklemore: \u2018I say free Palestine\u2019 as he kicks off a new tour",
-        "link": "https://www.aljazeera.com/video/newsfeed/2026/10/23/macklemore-i-say-free-palestine-as-he-kicks-off-a-new-tour?traffic_source=rss",
+        "title": "Argentinian judge drops fraud investigation into Milei over crypto scandal",
+        "link": "https://www.aljazeera.com/news/2026/10/24/argentinian-judge-drops-fraud-investigation-into-milei-over-crypto-scandal?traffic_source=rss",
         "thumbnail": "",
-        "published": "Fri, 23 Oct 2026 23:25:11 +0000"
+        "published": "Sat, 24 Oct 2026 01:21:18 +0000"
     },
     {
         "source": "NPR News",
@@ -34,18 +58,18 @@
     {
         "source": "RT News",
         "category": "Russia",
-        "title": "Macron brands Paris suburb shooting France\u2019s first \u2018racist terrorist attack\u2019",
-        "link": "https://rt-english.com/news/647595-france-racist-terrorist-attack/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adbdf6685f540199863978c.jpg",
-        "published": "Fri, 23 Oct 2026 22:30:56 +0000"
+        "title": "How the Cambridge Analytica scandal still haunts Mark Zuckerberg",
+        "link": "https://rt-english.com/news/647592-meta-zuckerberg-cambridge-analytica/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adba38885f5400fce72e34f.jpg",
+        "published": "Fri, 23 Oct 2026 23:13:03 +0000"
     },
     {
         "source": "Al Jazeera",
         "category": "Middle East",
-        "title": "Typhoon Champi hits Taiwan, killing one and injuring 350",
-        "link": "https://www.aljazeera.com/news/2026/10/23/typhoon-champi-hits-taiwan-killing-one-and-injuring-350?traffic_source=rss",
+        "title": "Syrians protest Israel\u2019s incursions near occupied Golan Heights",
+        "link": "https://www.aljazeera.com/video/newsfeed/2026/10/24/10-24-reported-heidi-pett-syria?traffic_source=rss",
         "thumbnail": "",
-        "published": "Fri, 23 Oct 2026 23:10:54 +0000"
+        "published": "Sat, 24 Oct 2026 00:50:05 +0000"
     },
     {
         "source": "NPR News",
@@ -58,41 +82,17 @@
     {
         "source": "RT News",
         "category": "Russia",
-        "title": "At least seven killed in \u2018terror attack\u2019 on church funeral in Jordan (VIDEOS)",
-        "link": "https://rt-english.com/news/647594-jordan-church-terrorist-attack/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adbcee72030270795735537.png",
-        "published": "Fri, 23 Oct 2026 21:21:29 +0000"
+        "title": "Macron brands Paris suburb shooting France\u2019s first \u2018racist terrorist attack\u2019",
+        "link": "https://rt-english.com/news/647595-france-racist-terrorist-attack/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
+        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6adbdf6685f540199863978c.jpg",
+        "published": "Fri, 23 Oct 2026 22:30:56 +0000"
     },
     {
         "source": "Al Jazeera",
         "category": "Middle East",
-        "title": "Kenya announces second Ebola death, says \u2018no evidence\u2019 of community spread",
-        "link": "https://www.aljazeera.com/news/2026/10/23/kenya-announces-second-ebola-death-says-no-evidence-of-community-spread?traffic_source=rss",
+        "title": "WHO announces start of Ebola vaccine clinical trial in DR Congo",
+        "link": "https://www.aljazeera.com/news/2026/10/24/who-announces-start-of-ebola-vaccine-clinical-trial-in-dr-congo?traffic_source=rss",
         "thumbnail": "",
-        "published": "Fri, 23 Oct 2026 22:33:48 +0000"
-    },
-    {
-        "source": "NPR News",
-        "category": "USA",
-        "title": "Ex-FBI employees charged with lying to Congress over Hunter Biden inquiries",
-        "link": "https://www.npr.org/2026/10/23/g-s1-149534/justice-fbi-charged-hunter-biden-laptop",
-        "thumbnail": "",
-        "published": "Fri, 23 Oct 2026 11:51:04 -0400"
-    },
-    {
-        "source": "RT News",
-        "category": "Russia",
-        "title": "Serbia at a crossroads: What\u2019s at stake and what Moscow can expect",
-        "link": "https://rt-english.com/news/647523-serbia-elections-vucic-russia/?utm_source=rss&utm_medium=rss&utm_campaign=RSS",
-        "thumbnail": "https://mf.b37mrtl.ru/files/2026.10/thumbnail/6ada2eb9203027799507e2e0.jpg",
-        "published": "Fri, 23 Oct 2026 21:21:17 +0000"
-    },
-    {
-        "source": "Al Jazeera",
-        "category": "Middle East",
-        "title": "Why is Israel increasing its presence in the Balkans?",
-        "link": "https://www.aljazeera.com/video/newsfeed/2026/10/23/why-is-israel-increasing-its-presence-in-the-balkans?traffic_source=rss",
-        "thumbnail": "",
-        "published": "Fri, 23 Oct 2026 22:01:52 +0000"
+        "published": "Sat, 24 Oct 2026 00:27:21 +0000"
     }
 ]
